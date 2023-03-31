@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto:wght@100&display=swap');
 body{
     margin: 0;
     padding: 0;
@@ -92,8 +93,9 @@ ul{
     margin-bottom: 80px;
     color: white;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
+    font-family: 'roboto', sans-serif;
+    text-align: start;
+    font-weight: 600;
    
 }
 .link-logo{
@@ -165,17 +167,17 @@ ul{
 }
 .main-container-profile>h1{
     margin: 0;
-    color: white;
+    color:goldenrod;
     padding-top: 60px;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 .text-profile{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    color: wheat;
+    color:floralwhite;
 }
 .text-left{
     padding-top: 6vh;
@@ -249,10 +251,10 @@ ul{
 }
 .main-container-projects>h1{
     margin: 0;
-    color: yellow;
+    color: goldenrod;
     padding-top: 60px;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .container-projects{
     width: 100%;
@@ -463,18 +465,15 @@ li{
         z-index: 3;
     }
     .nav-menu{
-        padding-right: 0;
+        padding-left:100px;
         width: 100px;
         display: block;
     }
+    .nav-name{
+        padding-left: 40vw;
+    }
     .nav-settings{
         display: none;
-    }
-    .text-profile p{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        font-size: 10px;
     }
     .main-container{
         width: 100%;
@@ -519,11 +518,12 @@ li{
         margin-bottom: 80px;
         color: white;
         text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: justify;
+        font-family: 'roboto', sans-serif;
+        text-align: start;
         font-size: 15px;
         padding-right: 20px;
         padding-left: 20px;
+        font-weight: 700;
     }
     .link-logo{
         width: 60%;
@@ -543,6 +543,48 @@ li{
     .main-center{
         display: none;
     }
+    .main-container-profile{
+        height: 110vh;
+        width: 100%;
+        border-top: 3px solid black;
+        background-color:rgb(10, 10, 10);
+    }
+    .main-container-profile>h1{
+        margin: 0;
+        color:goldenrod;
+        padding-top: 60px;
+        text-align: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+    .text-profile{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .text-profile p{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 11px;
+        color:floralwhite;
+    }
+    .text-left{
+        padding-top: 6vh;
+        width: 70%;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    .text-right{
+        padding-top: 6vh;
+        width: 70%;
+        padding-left: 10vw;
+        padding-right: 10vw;
+
+    }
+    
     .skills-card{
         width: 80px;
         height: 15vh;
@@ -558,7 +600,14 @@ li{
     }
     .img-logo{
         width: 100%;
-        height: 3rem;
+        height: 2rem;
+    }
+    .main-container-projects>h1{
+        margin: 0;
+        color: goldenrod;
+        padding-top: 60px;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .slider-project{
         position: relative;
@@ -635,12 +684,6 @@ li{
         background-color: #121212;
     
     }
-    .textarea{
-        width: 30vw;
-        outline: none;
-        border-radius: 4px;
-        border: 0.5px solid black;
-    }
     .menu-active{
         height: 50vh;
         opacity: 0;
@@ -653,7 +696,7 @@ li{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-top:40px ;
+        padding-top: 4rem ;
         
     }
     form{
@@ -663,14 +706,14 @@ li{
     }
     label{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 200;
         color: white;
     }
     input{
         margin-bottom: 8px;
-        width: 30vw;
-        height: 1rem;
+        width: 50vw;
+        height: 1.5rem;
         outline: none;
         border-radius: 4px;
         border: 0.5px solid black;
@@ -679,8 +722,8 @@ li{
         font-size: 12px;
     }
     textarea{
-        width: 30vw;
-        height: 4rem;
+        width: 50vw;
+        height: 7rem;
         outline: none;
         border-radius: 4px;
         border: 0.5px solid black;
@@ -688,8 +731,8 @@ li{
         font-family: Arial, Helvetica, sans-serif;
     }
     .btn-email button{
-        width: 70px;
-        height: 3vh;
+        width: 80px;
+        height: 4vh;
         border-radius: 4px;
         background-color:#fdce01;
         color: black;
@@ -701,6 +744,13 @@ li{
         text-transform: uppercase;
         transition: transform 0.3s;
     
+    }
+    .container-footer p{
+        border-top: 3px solid black;
+        padding-top: 25px;
+        margin: 0;
+        color:white;
+        font-size: 12px;
     }
 
 }
