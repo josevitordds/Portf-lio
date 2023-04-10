@@ -25,12 +25,13 @@
                     </button>
                 </div>
                 <div class="nav-name">
-                    <a href="#"> <em>NumbTech</em></a>
+                    <a href="#">NumbTech</a>
                 </div>
                 <div class="nav-settings">
                     <a href="#">Sobre mim</a>
-                    <a href="#">Porjetos</a>
                     <a href="#">Habilidades</a>
+                    <a href="#">Projetos</a>
+                    <a href="#">Contato</a>
                 </div>
             </ul>
         </nav>
@@ -39,9 +40,36 @@
         <div class="container-menu">
             <h1>MENU</h1>
             <li>
-                <a href="">fechar</a>
-                <a href="">oksopa</a>
-                <a href="">odopj</a>
+                <a id="close-menu">
+                    <span>
+                        <i class="material-symbols-outlined">close</i>
+                        <span>Fechar</span>
+                    </span>
+                </a>
+                <a href="">
+                    <span>
+                        <i class="material-symbols-outlined">person</i>
+                        <span>Sobre mim</span>
+                    </span>
+                </a>
+                <a href="">
+                    <span>
+                        <i class="material-symbols-outlined">book</i>
+                        <span>Habilidades</span>
+                    </span>
+                </a>
+                <a href="">
+                    <span>
+                        <i class="material-symbols-outlined">book</i>
+                        <span>Projetos</span>
+                    </span>
+                </a>
+                <a href="">
+                    <span>
+                        <i class="material-symbols-outlined">phone</i>
+                        <span>contato</span>
+                    </span>
+                </a>
             </li>
         </div>
 
@@ -50,17 +78,17 @@
         <div class="main-container">
             <div class="main-left">
                 <h2>Olá, sou o José Vitor.</h2>
-                <h1>Desenolvedor Front-End</h1>
+                <h1 class="digitando">Desenvolvedor Front-End</h1>
                 <p>Atualmente graduando em Ciência da Computação, com estudo dedicado ao front-end </p>
                 <div class="link-logo">
-                    <a href=""> <img class="img-link" src="github.png" alt=""></a>
-                    <a href=""><img class="img-link" src="logotipo-do-linkedin.png" alt=""></a>
-                    <a href=""><img class="img-link" src="instagram.png" alt=""></a>
+                    <a href=""> <img class="img-link" src="/Portifólio/imgs/github.png" alt=""></a>
+                    <a href=""><img class="img-link" src="/Portifólio/imgs/logotipo-do-linkedin.png" alt=""></a>
+                    <a href=""><img class="img-link" src="/Portifólio/imgs/instagram.png" alt=""></a>
                 </div>
 
             </div>
             <div class="main-center">
-                <img id="img" src="Profile.png" alt="Imagem de perfil">
+                <img id="img" src="/Portifólio/imgs/Profile.png" alt="Imagem de perfil">
             </div>
         </div>
         <div class="main-container-profile">
@@ -98,24 +126,30 @@
             <h1>Habilidades</h1>
             <div class="container-card">
                 <div class="skills-card">
-                    <a href=""><img class="img-logo" src="html-5.png" alt=""></a>
+                    <a><img class="img-logo" src="/Portifólio/imgs/html-5.png" alt=""></a>
+                    <p class="texto-skill">HTML <br>Nível intermediário </p>
                 </div>
                 <div class="skills-card">
-                    <a href=""><img class="img-logo" src="css-3.png" alt=""></a>
+                    <a ><img class="img-logo" src="/Portifólio/imgs/css-3.png" alt=""></a>
+                    <p class="texto-skill">CSS <br> Nível intermediário </p>
                 </div>
                 <div class="skills-card">
-                    <a href=""><img class="img-logo" src="script-java.png" alt=""></a>
+                    <a ><img class="img-logo" src="/Portifólio/imgs/script-java.png" alt=""></a>
+                    <p class="texto-skill">Javascript <br> Nível básico/intermediário </p>
                 </div>
             </div>
             <div class="container-card">
                 <div class="skills-card">
-                    <a href=""><img class="img-logo" src="python.png" alt=""></a>
+                    <a ><img class="img-logo" src="/Portifólio/imgs/python.png" alt=""></a>
+                    <p class="texto-skill">PYTHON <br> Nível básico/intermediário</p>
                 </div>
                 <div class="skills-card">
-                    <a href=""><img class="img-logo" src="mysql.png" alt=""></a>
+                    <a><img class="img-logo" src="/Portifólio/imgs/mysql.png" alt=""></a>
+                    <p class="texto-skill">MySQL <br> Nível básico <br></p>
                 </div>
                 <div class="skills-card">
-                    <a href=""><img class="img-logo" src="nodejs.png" alt=""></a>
+                    <a><img class="img-logo" src="/Portifólio/imgs/nodejs.png" alt=""></a>
+                    <p class="texto-skill">Node.js <br> Nível básico</p>
                 </div>
             </div>
 
@@ -128,33 +162,56 @@
                     <div class="parent-slider">
                         <a class="slider" href="">
                             <div class="project-active">
-                                <img class="img-project" src="css-3.png" alt="">
-                            </div>
-                            <div class="slider-button-active">
-                                <button>github</button>
-                                <button>Link do site</button>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="parent-slider">
-                        <a class="slider" href="">
-                            <div class="project-active">
-                                <img class="img-project" src="html-5.png" alt="">
-                            </div>
-                            <div class="slider-button-active">
-                                <button>github</button>
-                                <button>Link do site</button>
+                                <div class="titulo-slider">
+                                    <h3>Bloco de tarefas</h3>
+                                </div>
+                                <img class="img-project" src="/Portifólio/imgs/Bloco de Tarefas.png" alt="">
+                                <div class="slider-button-active">
+                                    <button>github</button>
+                                    <button>Link do site</button>
+                                </div>
                             </div>
                         </a>
                     </div>
                     <div class="parent-slider">
                         <a class="slider" href="">
                             <div class="project-active">
-                                <img class="img-project" src="script-java.png" alt="">
+                                <div class="titulo-slider">
+                                    <h3>Calculadora de Imc</h3>
+                                </div>
+                                <img class="img-project" src="/Portifólio/imgs/Caluladora de IMC.png" alt="">
+                                <div class="slider-button-active">
+                                    <button>github</button>
+                                    <button>Link do site</button>
+                                </div>
                             </div>
-                            <div class="slider-button-active">
-                                <button>github</button>
-                                <button>Link do site</button>
+                        </a>
+                    </div>
+                    <div class="parent-slider">
+                        <a class="slider" href="">
+                            <div class="project-active">
+                                <div class="titulo-slider">
+                                    <h3>Landing page</h3>
+                                </div>
+                                <img class="img-project" src="/Portifólio/imgs/Landing Page.png" alt="">
+                                <div class="slider-button-active">
+                                    <button>github</button>
+                                    <button>Link do site</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="parent-slider">
+                        <a class="slider" href="">
+                            <div class="project-active">
+                                <div class="titulo-slider">
+                                    <h3>Portfólio instagram</h3>
+                                </div>
+                                <img class="img-project" src="/Portifólio/imgs/portfolio-instagram.png" alt="">
+                                <div class="slider-button-active">
+                                    <button>github</button>
+                                    <button>Link do site</button>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -166,14 +223,16 @@
             <h1>contato</h1>
             <div class="form-contact">
                 <form action="mandar email">
-                    <label for="nome">Seu nome</label>
-                    <input type="text" id="name" name="name" placeholder="Seu nome:">
-                    <label for="email">Seu email</label>
-                    <input type="email" id="email" name="email" placeholder="Seu email:">
+                    <div class="dados">
+                        <label for="nome">Seu nome</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome:">
+                        <label for="email">Seu email</label>
+                        <input type="email" id="email" name="email" placeholder="Seu email:">
+                    </div>
                     <label for="assunto">Assunto</label>
                     <input type="text" id="assunto" name="assunto" placeholder="Assunto:">
                     <label for="mensagem">Mensagem</label>
-                    <textarea name="Mensagem" id="mensagem" cols="50" rows="10" placeholder=""></textarea>
+                    <textarea name="Mensagem" id="mensagem" cols="50" rows="12" placeholder="Mensagem"></textarea>
                     <div class="btn-email"><button> mandar</button></div>
                 </form>
             </div>

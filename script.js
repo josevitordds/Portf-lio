@@ -1,7 +1,22 @@
+//Efeito digitando do nome: Desenvolvedor front-end
+
+function ativarLetra(elemento){
+    const arrText = elemento.innerHTML.split("");
+    elemento.innerHTML = '';
+    arrText.forEach((Letra, i)=>{
+        setTimeout(()=>{
+            elemento.innerHTML += Letra;
+        }, 150 * i);
+    });
+
+}
+
+const titulo = document.querySelector(".digitando");
+ativarLetra(titulo);
+
 //constantes e variáveis
 const BTN_PREV = document.querySelector("#prev-slider"); //botão reponsável para voltar ao slider anterior 
-const BTN_NEXT = document.querySelector("#next-slider"); //botão responsável para ir ao slider posteiror
-const btnMenu = document.querySelector("#btnMenu") 
+const BTN_NEXT = document.querySelector("#next-slider"); //botão responsável para ir ao slider posteiror 
 const SLIDER = document.querySelectorAll('.slider'); //constante responsável para pegar a classe slider de todos os sliders
 
 let currentSlide = 0; //Variável let vazia, que será responsável por armazenar os sliders
@@ -48,13 +63,18 @@ setInterval(function (e) {
 }, 10000) //SetInterval é responsável por fazer determinada função em um determinado tempo, neste caso, irá adicionar +1 slider ao anterior a cada 10segundos.
 
 function ativarMenu(){
-    document.getElementById("menu-active").style.opacity="1";
+    document.getElementById("menu-active").style.display="block";
+}
+function desativarMenu(){
+    document.getElementById("menu-active").style.opacity="0";
 }
 
-
+const btnMenu = document.querySelector("#btnMenu");
+const closeMenu = document.querySelector("#close-menu");
 
 //Adicionar o evento de click ou de hover
 
 BTN_NEXT.addEventListener("click", nextSlider) //botão responsável para ir ao slider posteiror 
 BTN_PREV.addEventListener("click", prevSlider)  //botão reponsável para voltar ao slider anterior 
 btnMenu.addEventListener("click", ativarMenu)
+closeMenu.addEventListener("click", desativarMenu)
